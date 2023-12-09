@@ -1,12 +1,12 @@
 // server.js
 import express from 'express'
 const app = express();
-const port = 3000;
 import auth from './routes/auth.js'
 import connectDb from './middleware/mongoose.js';
 import * as dotenv from 'dotenv' 
 dotenv.config()
-
+const port = process.env.PORT || 5000;
+// console.log(process.env.PORT)
 // Define a route
 const DATABASE_URL = process.env.DATABASE_URL;
 console.log(DATABASE_URL,'url')
