@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 // console.log(process.env.PORT)
 // Define a route
 const DATABASE_URL = process.env.DATABASE_URL;
-console.log(DATABASE_URL,'url')
+// console.log(DATABASE_URL,'url')
 app.use(express.json());
 connectDb("mongodb+srv://rohangotwal:rohan123@cluster0.nvvzqtz.mongodb.net/?retryWrites=true&w=majority");
 app.get('/', (req, res) => {
